@@ -1,5 +1,7 @@
-CMakeFiles/run_tests.dir/src/shell.c.o: /home/ltrachta/tp3SO/src/shell.c \
- /usr/include/stdc-predef.h /home/ltrachta/tp3SO/include/shell.h \
+CMakeFiles/run_tests.dir/src/shell.c.o: \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/shell.c \
+ /usr/include/stdc-predef.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/shell.h \
  /usr/include/fcntl.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

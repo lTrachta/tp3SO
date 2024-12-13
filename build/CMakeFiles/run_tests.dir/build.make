@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ltrachta/tp3SO
+CMAKE_SOURCE_DIR = /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ltrachta/tp3SO/build
+CMAKE_BINARY_DIR = /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/run_tests.dir/depend.make
@@ -70,116 +70,116 @@ include CMakeFiles/run_tests.dir/progress.make
 include CMakeFiles/run_tests.dir/flags.make
 
 CMakeFiles/run_tests.dir/tests/src/test_json.c.o: CMakeFiles/run_tests.dir/flags.make
-CMakeFiles/run_tests.dir/tests/src/test_json.c.o: /home/ltrachta/tp3SO/tests/src/test_json.c
+CMakeFiles/run_tests.dir/tests/src/test_json.c.o: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_json.c
 CMakeFiles/run_tests.dir/tests/src/test_json.c.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/run_tests.dir/tests/src/test_json.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/src/test_json.c.o -MF CMakeFiles/run_tests.dir/tests/src/test_json.c.o.d -o CMakeFiles/run_tests.dir/tests/src/test_json.c.o -c /home/ltrachta/tp3SO/tests/src/test_json.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/run_tests.dir/tests/src/test_json.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/src/test_json.c.o -MF CMakeFiles/run_tests.dir/tests/src/test_json.c.o.d -o CMakeFiles/run_tests.dir/tests/src/test_json.c.o -c /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_json.c
 
 CMakeFiles/run_tests.dir/tests/src/test_json.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/run_tests.dir/tests/src/test_json.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/tp3SO/tests/src/test_json.c > CMakeFiles/run_tests.dir/tests/src/test_json.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_json.c > CMakeFiles/run_tests.dir/tests/src/test_json.c.i
 
 CMakeFiles/run_tests.dir/tests/src/test_json.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run_tests.dir/tests/src/test_json.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/tp3SO/tests/src/test_json.c -o CMakeFiles/run_tests.dir/tests/src/test_json.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_json.c -o CMakeFiles/run_tests.dir/tests/src/test_json.c.s
 
 CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o: CMakeFiles/run_tests.dir/flags.make
-CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o: /home/ltrachta/tp3SO/tests/src/test_pipes.c
+CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_pipes.c
 CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o -MF CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o.d -o CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o -c /home/ltrachta/tp3SO/tests/src/test_pipes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o -MF CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o.d -o CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o -c /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_pipes.c
 
 CMakeFiles/run_tests.dir/tests/src/test_pipes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/run_tests.dir/tests/src/test_pipes.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/tp3SO/tests/src/test_pipes.c > CMakeFiles/run_tests.dir/tests/src/test_pipes.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_pipes.c > CMakeFiles/run_tests.dir/tests/src/test_pipes.c.i
 
 CMakeFiles/run_tests.dir/tests/src/test_pipes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run_tests.dir/tests/src/test_pipes.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/tp3SO/tests/src/test_pipes.c -o CMakeFiles/run_tests.dir/tests/src/test_pipes.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_pipes.c -o CMakeFiles/run_tests.dir/tests/src/test_pipes.c.s
 
 CMakeFiles/run_tests.dir/tests/src/test_shell.c.o: CMakeFiles/run_tests.dir/flags.make
-CMakeFiles/run_tests.dir/tests/src/test_shell.c.o: /home/ltrachta/tp3SO/tests/src/test_shell.c
+CMakeFiles/run_tests.dir/tests/src/test_shell.c.o: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_shell.c
 CMakeFiles/run_tests.dir/tests/src/test_shell.c.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/run_tests.dir/tests/src/test_shell.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/src/test_shell.c.o -MF CMakeFiles/run_tests.dir/tests/src/test_shell.c.o.d -o CMakeFiles/run_tests.dir/tests/src/test_shell.c.o -c /home/ltrachta/tp3SO/tests/src/test_shell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/run_tests.dir/tests/src/test_shell.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/src/test_shell.c.o -MF CMakeFiles/run_tests.dir/tests/src/test_shell.c.o.d -o CMakeFiles/run_tests.dir/tests/src/test_shell.c.o -c /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_shell.c
 
 CMakeFiles/run_tests.dir/tests/src/test_shell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/run_tests.dir/tests/src/test_shell.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/tp3SO/tests/src/test_shell.c > CMakeFiles/run_tests.dir/tests/src/test_shell.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_shell.c > CMakeFiles/run_tests.dir/tests/src/test_shell.c.i
 
 CMakeFiles/run_tests.dir/tests/src/test_shell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run_tests.dir/tests/src/test_shell.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/tp3SO/tests/src/test_shell.c -o CMakeFiles/run_tests.dir/tests/src/test_shell.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_shell.c -o CMakeFiles/run_tests.dir/tests/src/test_shell.c.s
 
 CMakeFiles/run_tests.dir/tests/src/main.c.o: CMakeFiles/run_tests.dir/flags.make
-CMakeFiles/run_tests.dir/tests/src/main.c.o: /home/ltrachta/tp3SO/tests/src/main.c
+CMakeFiles/run_tests.dir/tests/src/main.c.o: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/main.c
 CMakeFiles/run_tests.dir/tests/src/main.c.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/run_tests.dir/tests/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/src/main.c.o -MF CMakeFiles/run_tests.dir/tests/src/main.c.o.d -o CMakeFiles/run_tests.dir/tests/src/main.c.o -c /home/ltrachta/tp3SO/tests/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/run_tests.dir/tests/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/src/main.c.o -MF CMakeFiles/run_tests.dir/tests/src/main.c.o.d -o CMakeFiles/run_tests.dir/tests/src/main.c.o -c /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/main.c
 
 CMakeFiles/run_tests.dir/tests/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/run_tests.dir/tests/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/tp3SO/tests/src/main.c > CMakeFiles/run_tests.dir/tests/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/main.c > CMakeFiles/run_tests.dir/tests/src/main.c.i
 
 CMakeFiles/run_tests.dir/tests/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run_tests.dir/tests/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/tp3SO/tests/src/main.c -o CMakeFiles/run_tests.dir/tests/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/main.c -o CMakeFiles/run_tests.dir/tests/src/main.c.s
 
 CMakeFiles/run_tests.dir/src/json.c.o: CMakeFiles/run_tests.dir/flags.make
-CMakeFiles/run_tests.dir/src/json.c.o: /home/ltrachta/tp3SO/src/json.c
+CMakeFiles/run_tests.dir/src/json.c.o: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/json.c
 CMakeFiles/run_tests.dir/src/json.c.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/run_tests.dir/src/json.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/json.c.o -MF CMakeFiles/run_tests.dir/src/json.c.o.d -o CMakeFiles/run_tests.dir/src/json.c.o -c /home/ltrachta/tp3SO/src/json.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/run_tests.dir/src/json.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/json.c.o -MF CMakeFiles/run_tests.dir/src/json.c.o.d -o CMakeFiles/run_tests.dir/src/json.c.o -c /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/json.c
 
 CMakeFiles/run_tests.dir/src/json.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/run_tests.dir/src/json.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/tp3SO/src/json.c > CMakeFiles/run_tests.dir/src/json.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/json.c > CMakeFiles/run_tests.dir/src/json.c.i
 
 CMakeFiles/run_tests.dir/src/json.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run_tests.dir/src/json.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/tp3SO/src/json.c -o CMakeFiles/run_tests.dir/src/json.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/json.c -o CMakeFiles/run_tests.dir/src/json.c.s
 
 CMakeFiles/run_tests.dir/src/shell.c.o: CMakeFiles/run_tests.dir/flags.make
-CMakeFiles/run_tests.dir/src/shell.c.o: /home/ltrachta/tp3SO/src/shell.c
+CMakeFiles/run_tests.dir/src/shell.c.o: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/shell.c
 CMakeFiles/run_tests.dir/src/shell.c.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/run_tests.dir/src/shell.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/shell.c.o -MF CMakeFiles/run_tests.dir/src/shell.c.o.d -o CMakeFiles/run_tests.dir/src/shell.c.o -c /home/ltrachta/tp3SO/src/shell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/run_tests.dir/src/shell.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/shell.c.o -MF CMakeFiles/run_tests.dir/src/shell.c.o.d -o CMakeFiles/run_tests.dir/src/shell.c.o -c /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/shell.c
 
 CMakeFiles/run_tests.dir/src/shell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/run_tests.dir/src/shell.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/tp3SO/src/shell.c > CMakeFiles/run_tests.dir/src/shell.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/shell.c > CMakeFiles/run_tests.dir/src/shell.c.i
 
 CMakeFiles/run_tests.dir/src/shell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run_tests.dir/src/shell.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/tp3SO/src/shell.c -o CMakeFiles/run_tests.dir/src/shell.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/shell.c -o CMakeFiles/run_tests.dir/src/shell.c.s
 
 CMakeFiles/run_tests.dir/src/pipes.c.o: CMakeFiles/run_tests.dir/flags.make
-CMakeFiles/run_tests.dir/src/pipes.c.o: /home/ltrachta/tp3SO/src/pipes.c
+CMakeFiles/run_tests.dir/src/pipes.c.o: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/pipes.c
 CMakeFiles/run_tests.dir/src/pipes.c.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/run_tests.dir/src/pipes.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/pipes.c.o -MF CMakeFiles/run_tests.dir/src/pipes.c.o.d -o CMakeFiles/run_tests.dir/src/pipes.c.o -c /home/ltrachta/tp3SO/src/pipes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/run_tests.dir/src/pipes.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/pipes.c.o -MF CMakeFiles/run_tests.dir/src/pipes.c.o.d -o CMakeFiles/run_tests.dir/src/pipes.c.o -c /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/pipes.c
 
 CMakeFiles/run_tests.dir/src/pipes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/run_tests.dir/src/pipes.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/tp3SO/src/pipes.c > CMakeFiles/run_tests.dir/src/pipes.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/pipes.c > CMakeFiles/run_tests.dir/src/pipes.c.i
 
 CMakeFiles/run_tests.dir/src/pipes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run_tests.dir/src/pipes.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/tp3SO/src/pipes.c -o CMakeFiles/run_tests.dir/src/pipes.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/pipes.c -o CMakeFiles/run_tests.dir/src/pipes.c.s
 
 CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o: CMakeFiles/run_tests.dir/flags.make
-CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o: /home/ltrachta/tp3SO/tp2SO/src/getinfojson.c
+CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tp2SO/src/getinfojson.c
 CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o -MF CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o.d -o CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o -c /home/ltrachta/tp3SO/tp2SO/src/getinfojson.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o -MF CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o.d -o CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o -c /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tp2SO/src/getinfojson.c
 
 CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/tp3SO/tp2SO/src/getinfojson.c > CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tp2SO/src/getinfojson.c > CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.i
 
 CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/tp3SO/tp2SO/src/getinfojson.c -o CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tp2SO/src/getinfojson.c -o CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.s
 
 # Object files for target run_tests
 run_tests_OBJECTS = \
@@ -206,7 +206,7 @@ run_tests: CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o
 run_tests: CMakeFiles/run_tests.dir/build.make
 run_tests: /home/ltrachta/.conan2/p/b/cjson232242abec263/p/lib/libcjson.a
 run_tests: CMakeFiles/run_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ltrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable run_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -218,6 +218,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/ltrachta/tp3SO/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ltrachta/tp3SO /home/ltrachta/tp3SO /home/ltrachta/tp3SO/build /home/ltrachta/tp3SO/build /home/ltrachta/tp3SO/build/CMakeFiles/run_tests.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles/run_tests.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/run_tests.dir/depend
 

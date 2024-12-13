@@ -1,6 +1,6 @@
 CMakeFiles/run_tests.dir/tests/src/main.c.o: \
- /home/ltrachta/tp3SO/tests/src/main.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/main.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -27,8 +27,8 @@ CMakeFiles/run_tests.dir/tests/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/ltrachta/tp3SO/tests/include/test_json.h \
- /home/ltrachta/tp3SO/include/json.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_json.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/json.h \
  /home/ltrachta/.conan2/p/b/cjson232242abec263/p/include/cjson/cJSON.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -64,8 +64,9 @@ CMakeFiles/run_tests.dir/tests/src/main.c.o: \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/ltrachta/tp3SO/tests/include/test_pipes.h \
- /home/ltrachta/tp3SO/include/pipes.h /usr/include/signal.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_pipes.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/pipes.h \
+ /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
@@ -96,9 +97,10 @@ CMakeFiles/run_tests.dir/tests/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/ltrachta/tp3SO/tests/include/test_shell.h /usr/include/assert.h \
- /home/ltrachta/tp3SO/include/shell.h /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_shell.h \
+ /usr/include/assert.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/shell.h \
+ /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \

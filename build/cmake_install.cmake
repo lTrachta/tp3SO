@@ -1,4 +1,4 @@
-# Install script for directory: /home/ltrachta/tp3SO
+# Install script for directory: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ltrachta/tp3SO/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

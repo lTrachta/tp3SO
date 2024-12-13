@@ -1,15 +1,17 @@
 CMakeFiles/run_tests.dir/tests/src/test_shell.c.o: \
- /home/ltrachta/tp3SO/tests/src/test_shell.c /usr/include/stdc-predef.h \
- /home/ltrachta/tp3SO/tests/include/test_shell.h /usr/include/assert.h \
- /usr/include/features.h /usr/include/features-time64.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_shell.c \
+ /usr/include/stdc-predef.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_shell.h \
+ /usr/include/assert.h /usr/include/features.h \
+ /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /home/ltrachta/tp3SO/include/shell.h /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/shell.h \
+ /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \

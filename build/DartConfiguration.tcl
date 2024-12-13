@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/ltrachta/tp3SO
-BuildDirectory: /home/ltrachta/tp3SO/build
+SourceDirectory: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO
+BuildDirectory: /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/ltrachta/tp3SO"
+ConfigureCommand: "/usr/bin/cmake" "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

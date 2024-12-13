@@ -1,8 +1,10 @@
 CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o: \
- /home/ltrachta/tp3SO/tests/src/test_pipes.c /usr/include/stdc-predef.h \
- /home/ltrachta/tp3SO/tests/include/test_pipes.h \
- /home/ltrachta/tp3SO/include/pipes.h /usr/include/signal.h \
- /usr/include/features.h /usr/include/features-time64.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_pipes.c \
+ /usr/include/stdc-predef.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_pipes.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/pipes.h \
+ /usr/include/signal.h /usr/include/features.h \
+ /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \

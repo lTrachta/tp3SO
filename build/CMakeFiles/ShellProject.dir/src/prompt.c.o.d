@@ -1,6 +1,8 @@
 CMakeFiles/ShellProject.dir/src/prompt.c.o: \
- /home/ltrachta/tp3SO/src/prompt.c /usr/include/stdc-predef.h \
- /home/ltrachta/tp3SO/include/prompt.h /usr/include/stdio.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/prompt.c \
+ /usr/include/stdc-predef.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/prompt.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

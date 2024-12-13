@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ltrachta/tp3SO/src/json.c" "CMakeFiles/ShellProject.dir/src/json.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/json.c.o.d"
-  "/home/ltrachta/tp3SO/src/main.c" "CMakeFiles/ShellProject.dir/src/main.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/main.c.o.d"
-  "/home/ltrachta/tp3SO/src/pipes.c" "CMakeFiles/ShellProject.dir/src/pipes.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/pipes.c.o.d"
-  "/home/ltrachta/tp3SO/src/prompt.c" "CMakeFiles/ShellProject.dir/src/prompt.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/prompt.c.o.d"
-  "/home/ltrachta/tp3SO/src/shell.c" "CMakeFiles/ShellProject.dir/src/shell.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/shell.c.o.d"
-  "/home/ltrachta/tp3SO/tp2SO/src/getinfojson.c" "CMakeFiles/ShellProject.dir/tp2SO/src/getinfojson.c.o" "gcc" "CMakeFiles/ShellProject.dir/tp2SO/src/getinfojson.c.o.d"
+  "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/json.c" "CMakeFiles/ShellProject.dir/src/json.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/json.c.o.d"
+  "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/main.c" "CMakeFiles/ShellProject.dir/src/main.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/main.c.o.d"
+  "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/pipes.c" "CMakeFiles/ShellProject.dir/src/pipes.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/pipes.c.o.d"
+  "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/prompt.c" "CMakeFiles/ShellProject.dir/src/prompt.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/prompt.c.o.d"
+  "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/shell.c" "CMakeFiles/ShellProject.dir/src/shell.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/shell.c.o.d"
+  "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tp2SO/src/getinfojson.c" "CMakeFiles/ShellProject.dir/tp2SO/src/getinfojson.c.o" "gcc" "CMakeFiles/ShellProject.dir/tp2SO/src/getinfojson.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,6 +1,7 @@
 CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o: \
- /home/ltrachta/tp3SO/tp2SO/src/getinfojson.c /usr/include/stdc-predef.h \
- /home/ltrachta/tp3SO/tp2SO/src/../include/getinfojson.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tp2SO/src/getinfojson.c \
+ /usr/include/stdc-predef.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tp2SO/src/../include/getinfojson.h \
  /home/ltrachta/.conan2/p/b/cjson232242abec263/p/include/cjson/cJSON.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ltrachta/tp3SO/include -I/home/ltrachta/tp3SO/tests/include -I/home/ltrachta/tp3SO/build/include -isystem /home/ltrachta/.conan2/p/b/cjson232242abec263/p/include
+C_INCLUDES = -I/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include -I/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include -I/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/include -isystem /home/ltrachta/.conan2/p/b/cjson232242abec263/p/include
 
 C_FLAGS = --coverage -O3 -DNDEBUG -std=gnu17
 

@@ -1,8 +1,10 @@
-CMakeFiles/ShellProject.dir/src/main.c.o: /home/ltrachta/tp3SO/src/main.c \
+CMakeFiles/ShellProject.dir/src/main.c.o: \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/main.c \
  /usr/include/stdc-predef.h \
  /home/ltrachta/.conan2/p/b/cjson232242abec263/p/include/cjson/cJSON.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /home/ltrachta/tp3SO/include/json.h /usr/include/stdio.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/json.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -62,7 +64,8 @@ CMakeFiles/ShellProject.dir/src/main.c.o: /home/ltrachta/tp3SO/src/main.c \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/ltrachta/tp3SO/include/pipes.h /usr/include/signal.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/pipes.h \
+ /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
@@ -93,9 +96,9 @@ CMakeFiles/ShellProject.dir/src/main.c.o: /home/ltrachta/tp3SO/src/main.c \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/ltrachta/tp3SO/include/prompt.h \
- /home/ltrachta/tp3SO/include/shell.h /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/prompt.h \
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/shell.h \
+ /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
