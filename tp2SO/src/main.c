@@ -17,6 +17,10 @@ int main()
     double net_tx;
     double process_count;
     double context_switches;
+    double fragmentation_rate;
+    double policy_usage;
+    double policy_efficiency;
+    int control = 0;
 
     // Cargar la configuración desde config.json
     load_config(&sampling_interval, metrics_to_collect, &num_metrics);
@@ -69,6 +73,29 @@ int main()
             {
                 context_switches = get_context_switches();
                 prom_gauge_set(context_switch_metric, context_switches, NULL);
+            }
+            else if (strcmp(metrics_to_collect[i], "fragmentation_rate") == 0)
+            {
+                fragmentation_rate = get_fragmentation_rate();
+                prom_gauge_set(fragmentation_rate_metric, fragmentation_rate, NULL);
+            }
+            else if (strcmp(metrics_to_collect[i], "policy_usage") == 0)
+            {
+                policy_usage = get_policy_usage(control);
+                control++;
+                if(control=3){
+                    control=0;
+                }
+                prom_gauge_set(policy_usage_metric, policy_usage, NULL);
+            }
+            else if (strcmp(metrics_to_collect[i], "policy_efficiency") == 0)
+            {
+                policy_efficiency = get_policy_efficiency(control);
+                control++;
+                if(control=3){
+                    control=0;
+                }
+                prom_gauge_set(policy_efficiency_metric, policy_efficiency, NULL);
             }
         }
 

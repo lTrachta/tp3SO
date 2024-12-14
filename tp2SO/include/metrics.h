@@ -87,3 +87,9 @@ double get_process_count(void);
  * @return Número de cambios de contexto, o -1 en caso de error.
  */
 double get_context_switches(void);
+
+double get_fragmentation_rate(void);
+
+int get_policy_usage(const char* policy);
+
+double get_policy_efficiency(const char* policy);

@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h> // Para perror
 #include <string.h> // Para strcmp
+#include "../../../lib/memory/include/memory.h" // Para acceso a las funciones y datos de memoria
 
 /**
  * @brief Obtiene el porcentaje de uso de memoria del sistema.
@@ -295,7 +296,7 @@ double get_process_count()
  *
  * @return double Número total de cambios de contexto. Retorna -1.0 en caso de error.
  */
-double get_context_switches()
+double get_context_switches(void)
 {
     FILE* fp = fopen("/proc/stat", "r");
     if (fp == NULL)
@@ -317,4 +318,85 @@ double get_context_switches()
 
     fclose(fp);
     return (double)context_switches;
+}
+
+/**
+ * @brief Calcula la tasa de fragmentación de memoria.
+ *
+ * La tasa de fragmentación se calcula como:
+ * Fragmentación = (Espacio libre no utilizable / Espacio libre total) * 100
+ *
+ * @return double Tasa de fragmentación en porcentaje. Retorna -1.0 en caso de error.
+ */
+double get_fragmentation_rate(void) {
+    size_t total_free_space = 0;
+    size_t largest_free_block = 0;
+
+    t_block current = get_memory_block_list(); // Supone una función que retorna la lista de bloques de memoria
+    while (current != NULL) {
+        if (!current->free) {
+            total_free_space += current->size;
+            if (current->size > largest_free_block) {
+                largest_free_block = current->size;
+            }
+        }
+        current = current->next;
+    }
+
+    if (total_free_space == 0) {
+        return 0.0; // No hay fragmentación si no hay espacio libre
+    }
+
+    double fragmentation = ((double)(total_free_space - largest_free_block) / total_free_space) * 100.0;
+    return fragmentation;
+}
+
+/**
+ * @brief Obtiene la frecuencia de uso de las políticas de asignación.
+ *
+ * @param policy Cadena que indica la política (e.g., "First Fit", "Best Fit", "Worst Fit").
+ * @return int Número de veces que se utilizó la política. Retorna -1 en caso de error.
+ */
+int get_policy_usage(const char* policy) {
+    if (strcmp(policy, "First Fit") == 0) {
+        return get_policy_usage_count(FIRST_FIT); // Supone una función que rastrea el uso de políticas
+    } else if (strcmp(policy, "Best Fit") == 0) {
+        return get_policy_usage_count(BEST_FIT);
+    } else if (strcmp(policy, "Worst Fit") == 0) {
+        return get_policy_usage_count(WORST_FIT);
+    }
+    return -1; // Política desconocida
+}
+
+/**
+ * @brief Calcula la eficiencia de una política de asignación.
+ *
+ * La eficiencia se define como la cantidad de bloques asignados exitosamente
+ * dividida entre el total de intentos de asignación.
+ *
+ * @param policy Cadena que indica la política (e.g., "First Fit", "Best Fit", "Worst Fit").
+ * @return double Eficiencia de la política en porcentaje. Retorna -1.0 en caso de error.
+ */
+double get_policy_efficiency(const char* policy) {
+    int successful_allocations = 0;
+    int total_attempts = 0;
+
+    if (strcmp(policy, "First Fit") == 0) {
+        successful_allocations = get_successful_allocations(FIRST_FIT);
+        total_attempts = get_allocation_attempts(FIRST_FIT);
+    } else if (strcmp(policy, "Best Fit") == 0) {
+        successful_allocations = get_successful_allocations(BEST_FIT);
+        total_attempts = get_allocation_attempts(BEST_FIT);
+    } else if (strcmp(policy, "Worst Fit") == 0) {
+        successful_allocations = get_successful_allocations(WORST_FIT);
+        total_attempts = get_allocation_attempts(WORST_FIT);
+    } else {
+        return -1.0; // Política desconocida
+    }
+
+    if (total_attempts == 0) {
+        return 0.0; // Eficiencia es cero si no hay intentos
+    }
+
+    return ((double)successful_allocations / total_attempts) * 100.0;
 }

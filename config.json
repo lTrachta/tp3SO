@@ -1,4 +1,4 @@
 {
 	"sampling_interval":	20,
-	"metrics_to_collect":	["memory_usage", "diskstats_usage"]
+	"metrics_to_collect":	["memory_usage", "diskstats_usage", "policy_efficiency"]
 }

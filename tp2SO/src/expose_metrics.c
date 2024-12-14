@@ -1,5 +1,5 @@
-#include "expose_metrics.h"
-#include "metrics.h" // Necesario para usar get_cpu_usage() y get_memory_usage()
+#include <expose_metrics.h>
+#include <metrics.h> // Necesario para usar get_cpu_usage() y get_memory_usage()
 #include <stdlib.h>  // Para funciones de utilidad general
 
 /** Mutex para sincronización de hilos */
@@ -28,6 +28,15 @@ prom_gauge_t* process_count_metric;
 
 /** Métrica de Prometheus para el número de cambios de contexto */
 prom_gauge_t* context_switch_metric;
+
+/** Métrica de Prometheus para la tasa de fragmentación */
+static prom_gauge_t* fragmentation_rate_metric;
+
+/** Métrica de Prometheus para la frecuencia de uso de cada política */
+static prom_gauge_t* policy_usage_metric;
+
+/** Métrica de Prometheus para la eficiencia de cada política */
+static prom_gauge_t* policy_efficiency_metric;
 
 /**
  * @brief Actualiza la métrica de uso de CPU.
@@ -116,7 +125,6 @@ void* expose_metrics(void* arg)
  */
 void init_metrics()
 {
-    // Inicializamos el mutex
     if (pthread_mutex_init(&lock, NULL) != 0)
     {
         fprintf(stderr, "Error al inicializar el mutex\n");
@@ -124,7 +132,6 @@ void init_metrics()
     }
     printf("Mutex inicializado correctamente.\n");
 
-    // Inicializamos el registro de coleccionistas de Prometheus
     if (prom_collector_registry_default_init() != 0)
     {
         fprintf(stderr, "Error al inicializar el registro de Prometheus\n");
@@ -132,134 +139,41 @@ void init_metrics()
     }
     printf("Registro de Prometheus inicializado correctamente.\n");
 
-    // Creamos la métrica para el uso de CPU
     cpu_usage_metric = prom_gauge_new("cpu_usage_percentage", "Porcentaje de uso de CPU", 0, NULL);
-    if (cpu_usage_metric == NULL)
-    {
-        fprintf(stderr, "Error al crear la métrica de uso de CPU\n");
-        return;
-    }
-    printf("Métrica de uso de CPU creada correctamente.\n");
-
-    // Creamos la métrica para el uso de memoria
     memory_usage_metric = prom_gauge_new("memory_usage_percentage", "Porcentaje de uso de memoria", 0, NULL);
-    if (memory_usage_metric == NULL)
-    {
-        fprintf(stderr, "Error al crear la métrica de uso de memoria\n");
-        return;
-    }
-    printf("Métrica de uso de memoria creada correctamente.\n");
-
-    // Registramos las métricas de CPU y memoria
-    if (prom_collector_registry_must_register_metric(cpu_usage_metric) == NULL)
-    {
-        fprintf(stderr, "Error al registrar la métrica de uso de CPU\n");
-        return;
-    }
-    printf("Métrica de uso de CPU registrada correctamente.\n");
-
-    if (prom_collector_registry_must_register_metric(memory_usage_metric) == NULL)
-    {
-        fprintf(stderr, "Error al registrar la métrica de uso de memoria\n");
-        return;
-    }
-    printf("Métrica de uso de memoria registrada correctamente.\n");
-
-    // Creamos y registramos la métrica de lectura de I/O de disco
     disk_io_read_metric = prom_gauge_new("disk_io_read_sectors", "Lecturas de sectores en disco", 0, NULL);
-    if (disk_io_read_metric == NULL)
-    {
-        fprintf(stderr, "Error al crear la métrica de lectura de I/O de disco\n");
-        return;
-    }
-    printf("Métrica de lectura de I/O de disco creada correctamente.\n");
-
-    if (prom_collector_registry_must_register_metric(disk_io_read_metric) == NULL)
-    {
-        fprintf(stderr, "Error al registrar la métrica de lectura de I/O de disco\n");
-        return;
-    }
-    printf("Métrica de lectura de I/O de disco registrada correctamente.\n");
-
-    // Creamos y registramos la métrica de escritura de I/O de disco
     disk_io_write_metric = prom_gauge_new("disk_io_write_sectors", "Escrituras de sectores en disco", 0, NULL);
-    if (disk_io_write_metric == NULL)
-    {
-        fprintf(stderr, "Error al crear la métrica de escritura de I/O de disco\n");
-        return;
-    }
-    printf("Métrica de escritura de I/O de disco creada correctamente.\n");
-
-    if (prom_collector_registry_must_register_metric(disk_io_write_metric) == NULL)
-    {
-        fprintf(stderr, "Error al registrar la métrica de escritura de I/O de disco\n");
-        return;
-    }
-    printf("Métrica de escritura de I/O de disco registrada correctamente.\n");
-
-    // Creamos y registramos la métrica de bytes recibidos en la red
     net_rx_metric = prom_gauge_new("network_rx_bytes", "Bytes recibidos en la red", 0, NULL);
-    if (net_rx_metric == NULL)
-    {
-        fprintf(stderr, "Error al crear la métrica de bytes recibidos en la red\n");
-        return;
-    }
-    printf("Métrica de bytes recibidos en la red creada correctamente.\n");
-
-    if (prom_collector_registry_must_register_metric(net_rx_metric) == NULL)
-    {
-        fprintf(stderr, "Error al registrar la métrica de bytes recibidos en la red\n");
-        return;
-    }
-    printf("Métrica de bytes recibidos en la red registrada correctamente.\n");
-
-    // Creamos y registramos la métrica de bytes transmitidos en la red
     net_tx_metric = prom_gauge_new("network_tx_bytes", "Bytes transmitidos en la red", 0, NULL);
-    if (net_tx_metric == NULL)
-    {
-        fprintf(stderr, "Error al crear la métrica de bytes transmitidos en la red\n");
-        return;
-    }
-    printf("Métrica de bytes transmitidos en la red creada correctamente.\n");
-
-    if (prom_collector_registry_must_register_metric(net_tx_metric) == NULL)
-    {
-        fprintf(stderr, "Error al registrar la métrica de bytes transmitidos en la red\n");
-        return;
-    }
-    printf("Métrica de bytes transmitidos en la red registrada correctamente.\n");
-
-    // Creamos y registramos la métrica de conteo de procesos
     process_count_metric = prom_gauge_new("process_count", "Cantidad de procesos en ejecución", 0, NULL);
-    if (process_count_metric == NULL)
-    {
-        fprintf(stderr, "Error al crear la métrica de conteo de procesos\n");
-        return;
-    }
-    printf("Métrica de conteo de procesos creada correctamente.\n");
-
-    if (prom_collector_registry_must_register_metric(process_count_metric) == NULL)
-    {
-        fprintf(stderr, "Error al registrar la métrica de conteo de procesos\n");
-        return;
-    }
-    printf("Métrica de conteo de procesos registrada correctamente.\n");
-
-    // Creamos y registramos la métrica de cambios de contexto
     context_switch_metric = prom_gauge_new("context_switches", "Número de cambios de contexto", 0, NULL);
-    if (context_switch_metric == NULL)
-    {
-        fprintf(stderr, "Error al crear la métrica de cambios de contexto\n");
-        return;
-    }
-    printf("Métrica de cambios de contexto creada correctamente.\n");
 
-    if (prom_collector_registry_must_register_metric(context_switch_metric) == NULL)
+    // Nuevas métricas
+    fragmentation_rate_metric = prom_gauge_new("fragmentation_rate", "Tasa de fragmentación de memoria", 0, NULL);
+    policy_usage_metric = prom_gauge_new("policy_usage", "Frecuencia de uso de políticas de asignación", 1, (const char*[]){"policy"});
+    policy_efficiency_metric = prom_gauge_new("policy_efficiency", "Eficiencia de las políticas de asignación", 1, (const char*[]){"policy"});
+
+    if (!cpu_usage_metric || !memory_usage_metric || !disk_io_read_metric || !disk_io_write_metric ||
+        !net_rx_metric || !net_tx_metric || !process_count_metric || !context_switch_metric ||
+        !fragmentation_rate_metric || !policy_usage_metric || !policy_efficiency_metric)
     {
-        fprintf(stderr, "Error al registrar la métrica de cambios de contexto\n");
+        fprintf(stderr, "Error al crear una o más métricas\n");
         return;
     }
-    printf("Métrica de cambios de contexto registrada correctamente.\n");
+
+    prom_collector_registry_must_register_metric(cpu_usage_metric);
+    prom_collector_registry_must_register_metric(memory_usage_metric);
+    prom_collector_registry_must_register_metric(disk_io_read_metric);
+    prom_collector_registry_must_register_metric(disk_io_write_metric);
+    prom_collector_registry_must_register_metric(net_rx_metric);
+    prom_collector_registry_must_register_metric(net_tx_metric);
+    prom_collector_registry_must_register_metric(process_count_metric);
+    prom_collector_registry_must_register_metric(context_switch_metric);
+    prom_collector_registry_must_register_metric(fragmentation_rate_metric);
+    prom_collector_registry_must_register_metric(policy_usage_metric);
+    prom_collector_registry_must_register_metric(policy_efficiency_metric);
+
+    printf("Todas las métricas se registraron correctamente.\n");
 }
 
 /**

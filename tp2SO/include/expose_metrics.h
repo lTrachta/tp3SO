@@ -26,6 +26,9 @@ extern prom_gauge_t* net_rx_metric;         ///< Métrica para la recepción de 
 extern prom_gauge_t* net_tx_metric;         ///< Métrica para la transmisión de datos de red
 extern prom_gauge_t* process_count_metric;  ///< Métrica para el conteo de procesos en ejecución
 extern prom_gauge_t* context_switch_metric; ///< Métrica para el conteo de cambios de contexto
+extern prom_gauge_t* fragmentation_rate_metric;
+extern prom_gauge_t* policy_usage_metric;
+extern prom_gauge_t* policy_efficiency_metric;
 
 /**
  * @brief Obtiene el tráfico de red recibido.
