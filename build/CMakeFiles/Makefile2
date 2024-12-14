@@ -840,12 +840,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/ShellProject.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShellProject.dir/build.make CMakeFiles/ShellProject.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShellProject.dir/build.make CMakeFiles/ShellProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ShellProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target ShellProject"
 .PHONY : CMakeFiles/ShellProject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ShellProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ShellProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles 0
 .PHONY : CMakeFiles/ShellProject.dir/rule
@@ -866,7 +866,7 @@ CMakeFiles/ShellProject.dir/clean:
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17 "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18 "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -892,7 +892,7 @@ CMakeFiles/run_tests.dir/clean:
 CMakeFiles/coverage.dir/all: CMakeFiles/run_tests.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coverage.dir/build.make CMakeFiles/coverage.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coverage.dir/build.make CMakeFiles/coverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=8 "Built target coverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/build/CMakeFiles --progress-num=9 "Built target coverage"
 .PHONY : CMakeFiles/coverage.dir/all
 
 # Build rule for subdir invocation for target.

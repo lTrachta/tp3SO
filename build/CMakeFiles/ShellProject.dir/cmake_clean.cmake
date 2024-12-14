@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ShellProject.dir/src/filesystem.c.o"
+  "CMakeFiles/ShellProject.dir/src/filesystem.c.o.d"
   "CMakeFiles/ShellProject.dir/src/json.c.o"
   "CMakeFiles/ShellProject.dir/src/json.c.o.d"
   "CMakeFiles/ShellProject.dir/src/main.c.o"

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/filesystem.c" "CMakeFiles/ShellProject.dir/src/filesystem.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/filesystem.c.o.d"
   "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/json.c" "CMakeFiles/ShellProject.dir/src/json.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/json.c.o.d"
   "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/main.c" "CMakeFiles/ShellProject.dir/src/main.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/main.c.o.d"
   "/home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/pipes.c" "CMakeFiles/ShellProject.dir/src/pipes.c.o" "gcc" "CMakeFiles/ShellProject.dir/src/pipes.c.o.d"

@@ -4,8 +4,7 @@
 CMakeFiles/run_tests.dir/src/json.c.o
  /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/json.c
  /home/ltrachta/.conan2/p/b/cjson232242abec263/p/include/cjson/cJSON.h
- /home/ltrachta/tp3SO/include/json.h
- /home/ltrachta/tp3SO/src/json.c
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/json.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h
@@ -76,8 +75,7 @@ CMakeFiles/run_tests.dir/src/json.c.o
 
 CMakeFiles/run_tests.dir/src/pipes.c.o
  /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/pipes.c
- /home/ltrachta/tp3SO/include/pipes.h
- /home/ltrachta/tp3SO/src/pipes.c
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/pipes.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h
@@ -174,8 +172,7 @@ CMakeFiles/run_tests.dir/src/pipes.c.o
 
 CMakeFiles/run_tests.dir/src/shell.c.o
  /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/src/shell.c
- /home/ltrachta/tp3SO/include/shell.h
- /home/ltrachta/tp3SO/src/shell.c
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/shell.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/fcntl.h
@@ -285,13 +282,12 @@ CMakeFiles/run_tests.dir/src/shell.c.o
 CMakeFiles/run_tests.dir/tests/src/main.c.o
  /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/main.c
  /home/ltrachta/.conan2/p/b/cjson232242abec263/p/include/cjson/cJSON.h
- /home/ltrachta/tp3SO/include/json.h
- /home/ltrachta/tp3SO/include/pipes.h
- /home/ltrachta/tp3SO/include/shell.h
- /home/ltrachta/tp3SO/tests/include/test_json.h
- /home/ltrachta/tp3SO/tests/include/test_pipes.h
- /home/ltrachta/tp3SO/tests/include/test_shell.h
- /home/ltrachta/tp3SO/tests/src/main.c
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/json.h
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/pipes.h
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/shell.h
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_json.h
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_pipes.h
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_shell.h
  /usr/include/alloca.h
  /usr/include/assert.h
  /usr/include/endian.h
@@ -402,9 +398,8 @@ CMakeFiles/run_tests.dir/tests/src/main.c.o
 CMakeFiles/run_tests.dir/tests/src/test_json.c.o
  /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_json.c
  /home/ltrachta/.conan2/p/b/cjson232242abec263/p/include/cjson/cJSON.h
- /home/ltrachta/tp3SO/include/json.h
- /home/ltrachta/tp3SO/tests/include/test_json.h
- /home/ltrachta/tp3SO/tests/src/test_json.c
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/json.h
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_json.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h
@@ -475,9 +470,8 @@ CMakeFiles/run_tests.dir/tests/src/test_json.c.o
 
 CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o
  /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_pipes.c
- /home/ltrachta/tp3SO/include/pipes.h
- /home/ltrachta/tp3SO/tests/include/test_pipes.h
- /home/ltrachta/tp3SO/tests/src/test_pipes.c
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/pipes.h
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_pipes.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h
@@ -580,9 +574,8 @@ CMakeFiles/run_tests.dir/tests/src/test_pipes.c.o
 
 CMakeFiles/run_tests.dir/tests/src/test_shell.c.o
  /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/src/test_shell.c
- /home/ltrachta/tp3SO/include/shell.h
- /home/ltrachta/tp3SO/tests/include/test_shell.h
- /home/ltrachta/tp3SO/tests/src/test_shell.c
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/include/shell.h
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tests/include/test_shell.h
  /usr/include/alloca.h
  /usr/include/assert.h
  /usr/include/endian.h
@@ -693,8 +686,7 @@ CMakeFiles/run_tests.dir/tests/src/test_shell.c.o
 CMakeFiles/run_tests.dir/tp2SO/src/getinfojson.c.o
  /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tp2SO/src/getinfojson.c
  /home/ltrachta/.conan2/p/b/cjson232242abec263/p/include/cjson/cJSON.h
- /home/ltrachta/tp3SO/tp2SO/include/getinfojson.h
- /home/ltrachta/tp3SO/tp2SO/src/getinfojson.c
+ /home/ltrachta/so-i-24-chp3-lTrachta/tp3SO/tp2SO/include/getinfojson.h
  /usr/include/alloca.h
  /usr/include/endian.h
  /usr/include/features-time64.h

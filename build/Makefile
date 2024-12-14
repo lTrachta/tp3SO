@@ -529,6 +529,30 @@ coverage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coverage.dir/build.make CMakeFiles/coverage.dir/build
 .PHONY : coverage/fast
 
+src/filesystem.o: src/filesystem.c.o
+.PHONY : src/filesystem.o
+
+# target to build an object file
+src/filesystem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShellProject.dir/build.make CMakeFiles/ShellProject.dir/src/filesystem.c.o
+.PHONY : src/filesystem.c.o
+
+src/filesystem.i: src/filesystem.c.i
+.PHONY : src/filesystem.i
+
+# target to preprocess a source file
+src/filesystem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShellProject.dir/build.make CMakeFiles/ShellProject.dir/src/filesystem.c.i
+.PHONY : src/filesystem.c.i
+
+src/filesystem.s: src/filesystem.c.s
+.PHONY : src/filesystem.s
+
+# target to generate assembly for a file
+src/filesystem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ShellProject.dir/build.make CMakeFiles/ShellProject.dir/src/filesystem.c.s
+.PHONY : src/filesystem.c.s
+
 src/json.o: src/json.c.o
 .PHONY : src/json.o
 
@@ -821,6 +845,9 @@ help:
 	@echo "... coverage"
 	@echo "... ShellProject"
 	@echo "... run_tests"
+	@echo "... src/filesystem.o"
+	@echo "... src/filesystem.i"
+	@echo "... src/filesystem.s"
 	@echo "... src/json.o"
 	@echo "... src/json.i"
 	@echo "... src/json.s"

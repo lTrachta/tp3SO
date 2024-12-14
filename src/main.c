@@ -9,11 +9,15 @@
 #include <pipes.h>       ///< Incluye funciones para manejo de pipes
 #include <prompt.h>      ///< Incluye la función mostrar_prompt()
 #include <shell.h>       ///< Incluye funciones para comandos internos
+#include <filesystem.h>  ///< Incluye funciones para la exploración del filesystem
 #include <stdio.h>       ///< Para funciones estándar como printf
 #include <stdlib.h>      ///< Para funciones de gestión de memoria
+#include <string.h>      ///< Para funciones de manipulación de cadenas
 #include <sys/types.h>   ///< Para tipos de datos específicos de sistema como pid_t
 #include <sys/wait.h>    ///< Para control de procesos y funciones wait
 #include <unistd.h>      ///< Para llamadas al sistema relacionadas con el sistema operativo (como sleep)
+
+#define HOST_NAME_MAX		64
 
 /// Definición de constante TRUE para bucle infinito
 #define TRUE 1
@@ -109,8 +113,34 @@ int main(int argc, char* argv[])
                 comando[strcspn(comando, "\n")] = 0; ///< Eliminar el salto de línea
                 printf("Ejecutando comando: %s\n", comando);
 
-                // Verificar si el comando comienza con "config"
-                if (strncmp(comando, "config", 6) == 0)
+                // Verificar si el comando comienza con "search"
+                if (strncmp(comando, "search", 6) == 0)
+                {
+                    char* cmd = strtok(comando, " "); // "search" ya está en cmd
+                    char* path = strtok(NULL, " ");
+                    char* type = strtok(NULL, " ");
+
+                    if (path && type)
+                    {
+                        if (strcmp(type, "config") == 0)
+                        {
+                            search_directory(path, "config");
+                        }
+                        else if (strcmp(type, "json") == 0)
+                        {
+                            search_directory(path, "json");
+                        }
+                        else
+                        {
+                            printf("Tipo no soportado. Use 'config' o 'json'.\n");
+                        }
+                    }
+                    else
+                    {
+                        printf("Uso incorrecto del comando search. Ejemplo: search <directorio> <config|json>\n");
+                    }
+                }
+                else if (strncmp(comando, "config", 6) == 0)
                 {
                     // Si es "config", dividir en key y value (sin modificar el comando original)
                     char* cmd = strtok(comando, " "); // "config" ya está en cmd

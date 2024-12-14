@@ -42,7 +42,7 @@ find_package(cJSON REQUIRED)
 # Define the executable for the shell
 add_executable(ShellProject
     src/main.c src/prompt.c src/shell.c src/pipes.c src/json.c
-    tp2SO/src/getinfojson.c
+    tp2SO/src/getinfojson.c src/filesystem.c
 )
 
 # Define the executable for tests
